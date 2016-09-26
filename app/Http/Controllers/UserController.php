@@ -13,9 +13,14 @@ use Redirect;
 class UserController extends Controller
 {
     protected $rules = [		
-			'code' => 'required|max:4',
-            'user' => 'required|max:100',
-            'description' => 'required',
+			'student_id' => 'required|max:4',
+            'birth_certificate' => 'required|max:100',
+            'surname' => 'required|max:100',
+            'first_name' => 'required|max:100',
+            'middle_name' => 'required|max:100',
+            'dob' => 'required',
+            'nationality' => 'required',
+            'primary_language' => 'required',
 	];
 	/**
 	 * Display a listing of the resource.
